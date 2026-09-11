@@ -1,0 +1,36 @@
+第一步：普通的本地文件夹变成一个 Git 能管理的项目，并把里面的代码上传到 GitHub 上。
+Claude code 命令：将文件夹初始化成git项目，推送到github上面
+利用PAT token来登录github
+
+第二步：git init初始化 把文件夹（自己选择）使用git repository管理起来
+用VS code 打开自己选择的文件夹 
+点击左侧的源代码管理 选择初始化仓库 文件夹有隐藏.git子文件夹（如果删除就取消了git对文件夹的管理）
+
+.gitignore文件夹: 声明仓库哪些文件不受git管理  右键点击文件选择添加   整个目录需要在结尾加/
+commit（提交）:每次修改完以后需要保存才可以提交
+changes：在提交之前可以用discard changes可以放弃本次修改
+commit id：在每次提交后的历史版本上，会显示。可以控制ai回到某个历史版本，或者精确改正某个版本
+main分支是主干分支
+点击左下角main 创建branch分支 在分支上执行命令不会影响主干，最后可以利用ai将分支合并到主干
+删除分支，不可能处于当前分支的状态
+worktree：相当于备份当前代码，后续更改不影响源代码
+
+1. Working Directory（工作区）
+   - 电脑磁盘的本地文件夹
+   - 你实际编辑代码的地方
+2. Local Repository（本地仓库）
+   - 存储在本地磁盘的 Git 仓库（.git 目录）
+   - 保存你提交的历史版本
+3. Remote Repository（远程仓库）
+   - GitHub 网站、Gitee 网站
+   - 云端存储的代码仓库，用于多人协作和备份
+
+
+git clone：将远端仓库创建出本地存储库和本地工作目录
+git add和 git commit：将工作区的改动提交到本地仓库
+git push：将本地仓库的改动提交到远端仓库
+git pull：将远端存储库的改动更新至工作区
+
+
+
+
